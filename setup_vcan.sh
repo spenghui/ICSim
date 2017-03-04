@@ -5,6 +5,7 @@ for arg in "$@"
    do
    sudo ip link add dev $arg type vcan
    sudo ip link set up $arg
+   ip link show $arg
 done
 
 
